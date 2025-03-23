@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -63,5 +64,26 @@
   }
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .container {
+    @apply lg:max-w-5xl;
+  }
+}
+
+@layer components {
+  .gradient-text {
+    @apply bg-[conic-gradient(at_right,_var(--tw-gradient-stops))] from-black via-sky-950 to-emerald-400 bg-clip-text text-transparent;
+  }
+
+  .pseudo-line {
+    @apply after:z-10 after:content-[''] after:absolute after:inset-0 after:outline-2 after:outline after:-outline-offset-2 after:rounded-3xl after:outline-white/20 after:pointer-events-none
+  }
+
+  .bg-grain {
+    background-image: url("/images/grain.jpg");
+    background-repeat: repeat;
   }
 }
