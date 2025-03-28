@@ -41,3 +41,93 @@ export const portfolioProjects = [
     image: weatherApp,
   },
 ];
+
+/* Bento Section */
+
+import {
+  SiHtml5,
+  SiCss3,
+  SiJavascript,
+  SiTailwindcss,
+  SiReact,
+  SiExpress,
+  SiTypescript,
+  SiNextdotjs,
+  SiMysql,
+  SiPrisma,
+  SiReactquery,
+  SiNodedotjs,
+  SiPostgresql,
+  SiGit,
+  SiShadcnui,
+} from "react-icons/si";
+
+import type { IconType } from "react-icons";
+
+interface FileItem {
+  icon: IconType;
+  name: string;
+}
+
+export const files: FileItem[] = [
+  {
+    icon: SiHtml5,
+    name: "HTML5",
+  },
+  {
+    icon: SiCss3,
+    name: "CSS3",
+  },
+  {
+    icon: SiJavascript,
+    name: "Javascript",
+  },
+  {
+    icon: SiTailwindcss,
+    name: "TailwindCSS",
+  },
+  {
+    icon: SiGit,
+    name: "Git",
+  },
+  {
+    icon: SiMysql,
+    name: "MySQL",
+  },
+  {
+    icon: SiNodedotjs,
+    name: "Node.js",
+  },
+  {
+    icon: SiReact,
+    name: "React.js",
+  },
+  {
+    icon: SiExpress,
+    name: "Express.js",
+  },
+  {
+    icon: SiPostgresql,
+    name: "PostgreSQL",
+  },
+  {
+    icon: SiTypescript,
+    name: "Typescript",
+  },
+  {
+    icon: SiReactquery,
+    name: "TanstackQuery",
+  },
+  {
+    icon: SiNextdotjs,
+    name: "Next.js",
+  },
+  {
+    icon: SiShadcnui,
+    name: "Shadcn/ui",
+  },
+  {
+    icon: SiPrisma,
+    name: "Prisma",
+  },
+];
