@@ -1,33 +1,33 @@
 import Link from "next/link";
-import { Github, Linkedin } from "lucide-react";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { InteractiveHoverButton } from "@/components/magicui/interactive-hover-button";
 
 export const Footer = () => {
   return (
-    <footer className="bg-black">
+    <footer className="bg-black" id="footer">
       <div className="mx-auto max-w-screen-xl px-4 pt-16 pb-8 sm:px-6 lg:px-8 lg:pt-24">
-        <div className="text-center">
-          <h2 className="text-3xl font-extrabold text-gray-900 sm:text-5xl dark:text-white">
-            Let's work together
-          </h2>
+        <div className="text-center h-screen flex items-center justify-center">
+          <div>
+            <h2 className="text-3xl text-white font-extrabold sm:text-5xl">
+              Let's work together
+            </h2>
 
-          <p className="mx-auto mt-4 max-w-sm text-gray-500 dark:text-gray-400">
-            If you are interested in building a project together or if you have
-            any questions, feel free to contact me.
-          </p>
+            <p className="max-w-sm mx-auto mt-8 text-gray-400">
+              If you are interested in building a project together or if you
+              have any questions, feel free to contact me.
+            </p>
 
-          <Link
-            href="mailto:ryanarkhan19@gmail.com"
-            className="inline-block mt-8"
-          >
-            <InteractiveHoverButton className="mt-8">
-              Get in touch
-            </InteractiveHoverButton>
-          </Link>
+            <Link
+              href="mailto:ryan.arkhann@gmail.com"
+              className="inline-block mt-8"
+            >
+              <InteractiveHoverButton>Get in touch</InteractiveHoverButton>
+            </Link>
+          </div>
         </div>
 
-        <div className="mt-16 text-center border-t border-gray-100 pt-8 sm:flex sm:items-center sm:justify-between lg:mt-24 dark:border-gray-800">
-          <p className="text-xs text-gray-500 dark:text-gray-400">
+        <div className="text-center mt-16 pt-8 border-t border-gray-100 sm:flex sm:items-center sm:justify-between lg:mt-24 dark:border-gray-800">
+          <p className="text-xs text-gray-500 dark:text-gray-400 md:text-sm">
             &#169; All Rights Reserved By Ryan Arkhan 🚀
           </p>
 
@@ -39,7 +39,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 className="text-gray-700 hover:opacity-75 dark:text-gray-200"
               >
-                <Github className="size-6" />
+                <FaGithub className="size-6" />
               </Link>
             </li>
 
@@ -50,7 +50,7 @@ export const Footer = () => {
                 rel="noreferrer"
                 className="text-gray-700 hover:opacity-75 dark:text-gray-200"
               >
-                <Linkedin className="size-6" />
+                <FaLinkedin className="size-6" />
               </Link>
             </li>
           </ul>

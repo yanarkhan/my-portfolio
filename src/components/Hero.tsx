@@ -7,7 +7,7 @@ import { StatusBadge } from "./elements/StatusBadge";
 
 export const Hero = () => {
   return (
-    <section className="py-32 md:py-48 lg:py-60">
+    <section className="py-20 md:py-28 lg:py-36">
       <div className="container">
         <div className="flex flex-col items-center">
           <Image src={profileMemo} className="size-24" alt="Profile Memoji" />
@@ -25,20 +25,24 @@ export const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center justify-center mt-8 gap-4 md:flex-row">
-          <RippleButton
-            className="w-72 border border-white/15 bg-transparent text-white md:w-60"
-            title="Explore My Projects"
-            icon={<MoveDown className="size-5" />}
-            position="left"
-            rippleColor="#34D399"
-          />
-          <RippleButton
-            className="w-72 border border-white bg-white text-gray-900 md:w-60"
-            title="Get in Touch"
-            icon={<Hand className="size-5" />}
-            position="right"
-            rippleColor="#ADD8E6"
-          />
+          <Link href="#projects" scroll={true}>
+            <RippleButton
+              className="w-72 border border-white/15 bg-black text-white md:w-60"
+              title="Explore My Projects"
+              icon={<MoveDown className="size-5" />}
+              position="left"
+              rippleColor="#34D399"
+            />
+          </Link>
+          <Link href="#footer" scroll={true}>
+            <RippleButton
+              className="w-72 border border-white bg-white text-gray-900 md:w-60"
+              title="Get in Touch"
+              icon={<Hand className="size-5" />}
+              position="right"
+              rippleColor="#ADD8E6"
+            />
+          </Link>
         </div>
       </div>
     </section>
