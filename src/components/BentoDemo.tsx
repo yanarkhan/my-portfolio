@@ -4,6 +4,7 @@ import { Marquee } from "@/components/magicui/marquee";
 import { files } from "@/data";
 import { cn } from "@/lib/utils";
 import { AnimatedBeamMultipleOutputDemo } from "./elements/AnimatedBeamMultipleOutputDemo";
+import { SectionHeader } from "./elements/SectionHeader";
 
 const features = [
   {
@@ -42,7 +43,8 @@ const features = [
   {
     Icon: CalendarIcon,
     name: "Tech Enthusiast",
-    description: "I prioritize client collaboration, fostering open communication",
+    description:
+      "I prioritize client collaboration, fostering open communication",
     background: <img className="absolute -right-20 -top-20 opacity-60" />,
     className: "lg:row-start-1 lg:row-end-2 lg:col-start-3 lg:col-end-3",
   },
@@ -51,7 +53,12 @@ const features = [
 export function BentoDemo() {
   return (
     <section className="mt-32 px-4 md:mt-12 md:px-8 lg:p-36">
-      <BentoGrid className="lg:grid-rows-3">
+      <SectionHeader
+        eyebrow="What I Do"
+        title="Creative Meets Code"
+        description="A glance at how I merge design and development into unique experiences."
+      />
+      <BentoGrid className="lg:grid-rows-3 mt-10 md:mt-20">
         {features.map((feature) => (
           <BentoCard key={feature.name} {...feature} />
         ))}
